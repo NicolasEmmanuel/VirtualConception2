@@ -18,4 +18,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [FormateursController::class, 'index'])->name('formateurs');
 
-Route::get('detail', [FormateursController::class, 'detail'])->name('detail');
+Route::get('detail/{id}', [FormateursController::class, 'detail'])->name('detail');
