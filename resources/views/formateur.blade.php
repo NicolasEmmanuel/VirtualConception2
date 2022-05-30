@@ -12,7 +12,7 @@
             <div class="mb-3">
                     <img class="w-auto mx-auto rounded-full" src="https://i.pravatar.cc/150?img=66" alt=""/>
             </div>
-            <h2 class="text-xl font-medium text-gray-700">Pande Muliada</h2>
+                    <h2 class="text-xl font-medium text-gray-700">Pande Muliada</h2>
             <span class="text-blue-500 block mb-5">Front End Developer</span>
             <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded-full">Hire</a>
             
