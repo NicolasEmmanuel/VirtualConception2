@@ -23,5 +23,5 @@ Route::get('/articles',[BlogController::class,'index'])->name('blog.accueil');
 
 
 /** detail blog */
-Route::get('/voir-plus',[BlogController::class,'detail'])->name('blog.detail');
+Route::get('/voir-plus/{id}',[BlogController::class,'detail'])->name('blog.detail');
 

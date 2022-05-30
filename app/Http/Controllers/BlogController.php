@@ -2,19 +2,25 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
 {
     public function index(){
 
-        return view('blog');
+        $articles = Blog::all();
+
+        return view('blog',compact('articles'));
 
     }
 
-    public function detail(){
+    public function detail($id){
 
-        return view('detail');
+
+        $detail = Blog::find($id);
+
+        return view('detail',compact('detail'));
 
 
 

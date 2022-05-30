@@ -1,4 +1,4 @@
-<h1>yé voila le blog </h1>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +10,9 @@
 
 </head>
 <body>
+    @forelse ($articles as $article)
+        
+   
      <!--Parent div-->
      <div class="grid grid-cols-1 md:grid-cols-2 gap-2"> 
         <!--Second Tag-->
@@ -32,19 +35,16 @@
           <h1
             class="font-semibold text-gray-900 leading-none text-xl mt-1 capitalize truncate"
           >
-            The rise of facebook
+            {{ $article->titre }}
           </h1>
           <!--Description-->
           <div class="max-w-full">
             <p class="text-base font-medium tracking-wide text-gray-600 mt-1">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil,
-              dignissimos repudiandae. Consequuntur minus ipsam repudiandae soluta
-              qui, recusandae obcaecati molestias commodi magnam nisi illo illum
-              quaerat aut maiores! Esse, aperiam!
+              {{ $article->description }}
             </p>
 
             <button class="">
-               <a href=""><span>
+               <a href="{{ route('blog.detail',['id'=>$article ])}}"><span>
                     Voir plus...
                 </span></a> 
             </button>
@@ -60,7 +60,7 @@
               <!--Author name-->
               <p class="text-gray-900 font-semibold">Lugano Shabani</p>
               <p class="text-gray-500 font-semibold text-sm">
-                Feb 24,2021 &middot; 6 min read
+               {{ $article->created_at }} &middot; 
               </p>
             </div>
           </div>
@@ -70,8 +70,15 @@
         </div>
         <!--End of first card-->
       </div>
+      @empty
+        no articles
+      @endforelse
       <!--End of parent div-->
   
       <script src="" async defer></script>
-</body>
+
+   
+   
+   
+    </body>
 </html>

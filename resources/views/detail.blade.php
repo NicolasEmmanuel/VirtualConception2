@@ -1,1 +1,0 @@
-<h2>voici nos détails sur le sujet</h2>
