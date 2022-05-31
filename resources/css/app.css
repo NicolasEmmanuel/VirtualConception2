@@ -635,7 +635,7 @@ a {
     
     transition: 0.5s;
     size-adjust: 10%;
-    box-shadow: 10px 10px 10px var(--secondary-color);
+    box-shadow: 5px 5px 10px #f6b95e;
 
   }
 
