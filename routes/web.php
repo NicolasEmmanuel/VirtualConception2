@@ -27,9 +27,8 @@ Route::get('/articles',[BlogController::class,'index'])->name('blog.accueil');
 Route::get('/voir-plus/{id}',[BlogController::class,'detail'])->name('blog.detail');
 
 /**Ck editor */
-Route::get('/editor',[EditorController::class,"index"]);
 
-Route::get('/create',[EditorController::class,"create"]);
+Route::get('/create',[BlogController::class,"create"])->name('blog.editor');
 
-Route::post('/store',[EditorController::class,"store"]);
+Route::post('/store',[BlogController::class,"store"])->name('blog.ajout');
 

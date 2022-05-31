@@ -10,7 +10,8 @@
 
 </head>
 <body>
-   
+ <a href="{{route('blog.editor')}}"> <button type="" class="btn btn-success">Ajouter un post</button> </a> 
+
     @forelse ($articles as $article)
         
    

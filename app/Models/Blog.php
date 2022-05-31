@@ -12,6 +12,13 @@ class Blog extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+
+        "titre",
+        "description"
+
+    ];
+
     public function category(){
         $this->belongsTo(Category::class);
     }

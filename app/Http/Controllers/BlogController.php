@@ -23,6 +23,23 @@ class BlogController extends Controller
         return view('detail',compact('detail'));
 
     }
+
+    public function create() {
+ 
+        return view("create");
+    }
+
+    public function store(Request $request) {
+ 
+        $post = [  "titre"  =>  $request->titre,
+                    "description" => $request->description
+                ];
+       
+        $post  =  Blog::create($post);
+ 
+        return back()->with("success", "Post has been created");
+     
+    }
   
 
 }
