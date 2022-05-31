@@ -10,11 +10,14 @@
 
 </head>
 <body>
+   
     @forelse ($articles as $article)
         
    
      <!--Parent div-->
-     <div class="grid grid-cols-1 md:grid-cols-2 gap-2"> 
+     
+ 
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-2">  
         <!--Second Tag-->
         <div class="p-8 bg-white">
           <!--Banner image-->
