@@ -19,13 +19,13 @@
         <header>
            <div class="image-text">
                <span class="image">
-                 <img src="{{Storage::url($actu->image)}}"  alt="logo">  
+                 <img src="images/logo.png" alt="logo">  
                </span>
 
 
               <div class="text header-text">
-                   <span class="name">CodingLab</span>
-                   <span class="profession">web developer</span>
+                   <span class="name">Visual Conception</span>
+                   <span class="profession">Admin</span>
                </div>
            </div> 
            <i class="bx bx-chevron-right toggle"></i>
@@ -50,25 +50,25 @@
                     <li class="nav-link">
                         <a href="#">
                             <i class="bx bx-bar-chart-alt-2 icon" ></i>
-                            <span class="text nav-text">Revenue</span>
+                            <span class="text nav-text">Blogs</span>
                         </a>
                     </li>
                     <li class="nav-link">
                         <a href="#">
                             <i class="bx bx-bell icon" ></i>
-                            <span class="text nav-text">Notifications</span>
+                            <span class="text nav-text">Teams</span>
                         </a>
                     </li>
                     <li class="nav-link">
                         <a href="#">
                             <i class="bx bx-pie-chart-alt icon" ></i>
-                            <span class="text nav-text">Analytics</span>
+                            <span class="text nav-text">Formations</span>
                         </a>
                     </li>
                     <li class="nav-link">
                         <a href="#">
                             <i class="bx bx-heart icon" ></i>
-                            <span class="text nav-text">Likes</span>
+                            <span class="text nav-text">Utilisateurs</span>
                         </a>
                     </li>
                     <li class="nav-link">
@@ -105,10 +105,10 @@
     </nav>
 
     <section class="home">
-        <div class="text">Dasboard</div>
+        <div class="text">Dashboard</div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
 
