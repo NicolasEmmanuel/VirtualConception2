@@ -11,7 +11,8 @@ class FormateursController extends Controller
     //
     public function index(){
 
-        $formateurs=User::All();
+        
+        $formateurs=User::all()->where('role', '=', 'formateur' );
         return view('formateur', compact('formateurs'));
     }
 

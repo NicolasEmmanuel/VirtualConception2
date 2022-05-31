@@ -1,21 +1,22 @@
-<h1>Description</h1>
+@extends('layouts.app')
+@section('content')
+
+
 
 <!-- component -->
+<!-- Create By Joker Banny -->
+<div class="min-h-screen bg-gray-100 flex items-center justify-center">
 
-<!-- background -->
-<div class="relative flex min-h-screen flex-col justify-center bg-gradient-to-r from-rose-100 to-teal-100">
-   
-    <!-- card -->
-    <div class="mx-auto flex w-96 flex-col justify-center bg-white rounded-2xl shadow-xl shadow-slate-300/60">
-      
-        <!-- img -->
-      <img class="aspect-video w-96 rounded-t-2xl object-cover object-center" src={{$detailFormateur->photo}} />
-      
-      <!-- text information -->
-      <div class="p-4">
-        <small class="text-blue-400 text-xs">{{$detailFormateur->name}}</small>
-        <h1 class="text-2xl font-medium text-slate-600 pb-2">{{$detailFormateur->role}}</h1>
-        <p class="text-sm tracking-tight font-light text-slate-400 leading-6">{{$detailFormateur->presentation}}</p>
+  <div class=" w-80 bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl hover:scale-105 duration-500 transform transition cursor-pointer">
+
+    <img src={{$detailFormateur->photo}} alt="">
+
+      <div class="p-5">
+          <h1 class="text-2xl font-bold">{{$detailFormateur->name}}</h1>
+          <p class="mt-2 text-lg font-semibold text-gray-600">{{$detailFormateur->role}}</p>
+          <p class="mt-1 text-gray-500 font-">{{$detailFormateur->presentation}}</p>
       </div>
-    </div>
+      <a href="/" class="px-2 py-2 bg-blue-500 text-white rounded-full">retour</a>
   </div>
+
+</div>
