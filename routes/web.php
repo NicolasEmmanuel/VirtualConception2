@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\EmericController;
+use App\Http\Controllers\FormationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/formations', [EmericController::class, 'index'])->name('formation');
+Route::get('/formations', [FormationController::class, 'index'])->name('formation');
 
-Route::get('/formations/{nom}', [EmericController::class, 'detail'])->name('detail_formation');
+Route::get('/formations/{nom}', [FormationController::class, 'detail'])->name('detail_formation');

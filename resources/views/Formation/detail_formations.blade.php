@@ -10,7 +10,7 @@
 <body>
 
 @foreach ($formations as $formation)
-
+    
     <h1>{{ $formation->nom }}</h1>
 
     <h1>{{ $formation->presentation_du_metier }}</h1>
@@ -24,8 +24,6 @@
     <h1>{{ $formation->suite_de_parcours_possibles }}</h1>
     <h1>{{ $formation->date_debut }}</h1>
     <h1>{{ $formation->date_fin }}</h1>
-
-
 
 @endforeach
 
