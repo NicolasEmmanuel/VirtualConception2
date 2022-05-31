@@ -1,6 +1,8 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LayoutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/',[LayoutController::class, 'index'])->name('index');
+
+Route::get('/formation',[LayoutController::class, 'formation'])->name('formation');
+
+Route::get('/formation/detail',[LayoutController::class, 'formation_detail'])->name('formation_detail');
+
+Route::get('/blog',[LayoutController::class, 'blog'])->name('blog');
+
+
