@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\EditorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,4 +25,11 @@ Route::get('/articles',[BlogController::class,'index'])->name('blog.accueil');
 
 /** detail blog */
 Route::get('/voir-plus/{id}',[BlogController::class,'detail'])->name('blog.detail');
+
+/**Ck editor */
+Route::get('/editor',[EditorController::class,"index"]);
+
+Route::get('/create',[EditorController::class,"create"]);
+
+Route::post('/store',[EditorController::class,"store"]);
 

@@ -22,7 +22,7 @@ class BlogController extends Controller
 
         return view('detail',compact('detail'));
 
-
-
     }
+  
+
 }
