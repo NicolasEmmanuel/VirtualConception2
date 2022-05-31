@@ -18,4 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/formations', [EmericController::class, 'index'])->name('formations');
+Route::get('/formations', [EmericController::class, 'index'])->name('formation');
+
+Route::get('/formations/{nom}', [EmericController::class, 'detail'])->name('detail_formation');

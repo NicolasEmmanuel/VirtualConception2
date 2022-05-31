@@ -2,12 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Formation;
 use Illuminate\Http\Request;
 
 class EmericController extends Controller
 {
     public function index(){
 
-        return view('Formation.formations');
+        $formations = Formation::all() ;
+        return view('Formation.formations', compact('formations')) ;
+    }
+
+    public function detail($nom){
+
+        $details = Formation::where('nom', '=', $nom) ;
+        $formations = Formation::all() ;
+        return view('Formation.detail_formations', compact('details','formations')) ;
     }
 }
