@@ -81,11 +81,14 @@
             </div>
             
             <div class="bottom-content">
-                <li class="">
-                    <a href="#">
+                <li class="nav-link">
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <a href="{{ route('logout') }}" onclick="event.preventDefault(); this.submit();">
                         <i class="bx bx-log-out icon" ></i>
                         <span class="text nav-text">Logout</span>
-                    </a>
+                        </a>
+                    </form>
                 </li>
 
                 <li class="mode">
